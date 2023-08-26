@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="container">
-      <Header toggleAbout={toggleAbout} />
+      <Header toggleAbout={toggleAbout} aboutIsActive={aboutIsActive} />
       <Work />
       {aboutIsActive && (
         <>

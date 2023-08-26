@@ -1,12 +1,12 @@
 import React from "react";
+import AboutContent from "../molecules/AboutContent";
+import Degree from "../molecules/Degree";
 
 function About() {
   return (
     <div className="aboutPage">
-      <div>JE SUIS LA PAGE ABOUT OUI OUI OUI</div>
-      <div>JE SUIS LA PAGE ABOUT OUI OUI OUI</div>
-      <div>JE SUIS LA PAGE ABOUT OUI OUI OUI</div>
-      <div>JE SUIS LA PAGE ABOUT OUI OUI OUI</div>
+      <AboutContent />
+      <Degree />
     </div>
   );
 }
