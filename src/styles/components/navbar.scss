@@ -1,0 +1,15 @@
+nav {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+
+  .navItems {
+    display: flex;
+    align-items: end;
+
+    li {
+      margin-inline: 10px;
+    }
+  }
+}
