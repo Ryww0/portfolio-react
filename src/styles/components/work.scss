@@ -1,0 +1,17 @@
+.containerWork {
+  display: flex;
+  justify-content: end;
+}
+
+.work {
+  width: 45%;
+  text-align: end;
+
+  h2 {
+    line-height: 0.7;
+  }
+
+  .project {
+    margin-block: 10px;
+  }
+}

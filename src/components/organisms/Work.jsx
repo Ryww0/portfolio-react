@@ -3,9 +3,13 @@ import Project from "../molecules/Project";
 
 function Work() {
   return (
-    <>
-      <Project name={"tenschool"} date={"2023"} />
-    </>
+    <div className="containerWork">
+      <div className="work">
+        <Project name={"ten school"} date={"2023"} />
+        <Project name={"pokedex"} date={"2022"} />
+        <Project name={"ace bakery"} date={"2022"} />
+      </div>
+    </div>
   );
 }
 

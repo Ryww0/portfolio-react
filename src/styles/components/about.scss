@@ -1,0 +1,9 @@
+.aboutPage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  width: 100svw;
+  height: 100svh;
+  z-index: 2;
+}

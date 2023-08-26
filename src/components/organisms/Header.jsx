@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
 
-function Header() {
+function Header({ toggleAbout }) {
   return (
     <nav>
       <div className="navLogo">
@@ -10,7 +10,7 @@ function Header() {
         <p>Lyon, France</p>
       </div>
       <ul className="navItems">
-        <li>.about</li>
+        <li onClick={() => toggleAbout()}>.about</li>
         <li>.contact</li>
       </ul>
     </nav>
