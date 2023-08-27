@@ -4,21 +4,21 @@ import { Link } from "react-router-dom";
 
 function Header({ toggleAbout, aboutIsActive }) {
   return (
-    <nav className={aboutIsActive && "active"}>
+    <nav className={aboutIsActive ? "active" : undefined}>
       <div className="navLogo">
         <Link to="/">
           <motion.svg
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ ease: "easeIn", duration: 0.15 }}
-            className={aboutIsActive && "active"}
+            className={aboutIsActive ? "active" : undefined}
             width="175"
             height="88"
             viewBox="0 0 175 88"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_3_109)">
+            <g clipPath="url(#clip0_3_109)">
               <path
                 d="M0.343941 86.1042C44.6258 52.9157 27.9894 -8.26276 90.6479 0.930011C90.8113 0.95406 90.9641 1.0253 91.0877 1.13502C91.2113 1.24474 91.3003 1.38818 91.3438 1.54781C91.3874 1.70744 91.3836 1.87634 91.333 2.03386C91.2823 2.19137 91.187 2.33068 91.0586 2.43474C46.502 38.4697 64.7693 92.9703 0.779757 87.6356C0.607561 87.6218 0.443688 87.5555 0.310065 87.4458C0.176442 87.336 0.0794438 87.188 0.03205 87.0214C-0.0153439 86.8549 -0.0108725 86.6778 0.0448657 86.5139C0.100604 86.35 0.20495 86.207 0.343941 86.1042Z"
                 fill="currentColor"
