@@ -1,7 +1,8 @@
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/organisms/Header";
-import Work from "./components/organisms/Work";
-import About from "./components/pages/About";
+import Home from "./components/pages/Home";
 
 function App() {
   const [aboutIsActive, setAboutIsActive] = useState(false);
@@ -13,13 +14,12 @@ function App() {
 
   return (
     <div className="container">
-      <Header toggleAbout={toggleAbout} aboutIsActive={aboutIsActive} />
-      <Work />
-      {aboutIsActive && (
-        <>
-          <About />
-        </>
-      )}
+      <Router>
+        <Header toggleAbout={toggleAbout} aboutIsActive={aboutIsActive} />
+        <Routes>
+          <Route path="/" element={<Home aboutIsActive={aboutIsActive} />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

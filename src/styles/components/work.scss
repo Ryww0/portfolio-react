@@ -7,6 +7,24 @@
   width: 45%;
   text-align: end;
 
+  &:hover .project:not(:hover) {
+    opacity: 0.2 !important;
+  }
+
+  .project {
+    transition: opacity ease 650ms;
+    transition: transform ease 250ms;
+    cursor: pointer;
+
+    &:hover {
+      transform: rotate3d(0, 1, 1, 1deg) !important;
+    }
+
+    &:hover h2 {
+      transform: scale(1.05) !important;
+    }
+  }
+
   h2 {
     line-height: 0.7;
   }

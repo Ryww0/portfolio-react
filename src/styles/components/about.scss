@@ -1,9 +1,10 @@
 .aboutPage {
+  color: $clr-primary;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(#000000, 0.6);
-  backdrop-filter: blur(4px);
+  background-color: rgba(#dc8282, 0.6);
+  backdrop-filter: blur(10px);
   width: 100svw;
   height: 100svh;
   z-index: 2;
