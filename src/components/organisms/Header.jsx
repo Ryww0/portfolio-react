@@ -57,6 +57,11 @@ function Header({ toggleAbout, aboutIsActive }) {
         >
           Lyon, France
         </motion.p>
+        <div className="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <ul className="navItems">
         <motion.li
