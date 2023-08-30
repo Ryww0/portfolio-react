@@ -90,6 +90,8 @@ nav {
     padding-top: 10px;
     width: 100svw;
     height: 60px;
+    display: flex;
+    flex-direction: column;
 
     .navLogo {
       display: flex;
@@ -109,7 +111,24 @@ nav {
     }
 
     .navItems {
-      align-items: start;
+      align-items: center;
+      background-color: $clr-secondary;
+      color: $clr-primary;
+      padding-block: 15px !important;
+      padding-left: 0 !important;
+      flex-direction: column;
+      font-size: 20px;
+      width: 93.5svw;
+      border-radius: 5px;
+      height: 100px;
+
+      li {
+        margin-block: 5px;
+
+        a {
+          color: $clr-primary;
+        }
+      }
     }
 
     .navItems,

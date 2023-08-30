@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const list = {
+  open: {
+    clipPath: "inset(0% 0% 0% 0% round 10px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.7,
+      delayChildren: 0.3,
+      staggerChildren: 0.05,
+    },
+  },
+  closed: {
+    clipPath: "inset(10% 50% 90% 50% round 10px)",
+    transition: {
+      type: "spring",
+      bounce: 0,
+      duration: 0.3,
+    },
+  },
+};
+
 function Header({ toggleAbout, aboutIsActive }) {
+  const [navIsActive, setNavIsActive] = useState(false);
+
+  const toggleNav = () => {
+    setNavIsActive((current) => !current);
+    console.log(navIsActive);
+  };
+
   return (
     <nav className={aboutIsActive ? "active" : undefined}>
       <div className="navLogo">
@@ -57,18 +85,26 @@ function Header({ toggleAbout, aboutIsActive }) {
         >
           Lyon, France
         </motion.p>
-        <div className="burger">
+        <div onClick={() => toggleNav()} className="burger">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <ul className="navItems">
+      <motion.ul
+        initial={false}
+        animate={navIsActive ? "open" : "closed"}
+        variants={list}
+        className={`navItems ${navIsActive ? "d-flex" : ""}`}
+      >
         <motion.li
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeIn", duration: 0.15, delay: 1 }}
-          onClick={() => toggleAbout()}
+          onClick={() => {
+            toggleAbout();
+            toggleNav();
+          }}
         >
           .about
         </motion.li>
@@ -79,7 +115,7 @@ function Header({ toggleAbout, aboutIsActive }) {
         >
           <a href="mailto:laurent@icloud.com">.contact</a>
         </motion.li>
-      </ul>
+      </motion.ul>
     </nav>
   );
 }
