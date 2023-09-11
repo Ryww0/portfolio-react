@@ -76,6 +76,10 @@ nav {
       }
     }
 
+    &.on {
+      top: -300%;
+    }
+
     &:hover {
       stroke: $clr-secondary;
       color: rgba($color: #000000, $alpha: 0) !important;
@@ -103,6 +107,7 @@ nav {
       svg {
         height: 50px;
         width: auto;
+        top: 0;
       }
 
       .burger {

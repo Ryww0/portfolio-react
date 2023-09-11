@@ -36,6 +36,18 @@
   }
 
   .aboutArticle {
-    padding-inline: 20px;
+    padding-inline: 10px;
+
+    &:first-child {
+      max-width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .aboutPage {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-inline: 0;
   }
 }

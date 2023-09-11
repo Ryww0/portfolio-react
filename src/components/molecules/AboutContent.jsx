@@ -17,8 +17,11 @@ function AboutContent() {
         Je suis actuellement en recherche d'emploi en tant que développeur web.
       </p>
       <p>
-        Jeune développeur web de 23 ans, je maitrîse Symfony, React et MySQL,
-        sans oublier l'incoutournable et indispensable GIT.
+        Jeune développeur web de 23 ans, j'ai trouvé ma passion dans le
+        développement web. Maitrisant PHP et son framework Symfony, JavaScript
+        ainsi que React, j'aime apprendre sans cesse de nouvelles choses et
+        améliorer mes compétences en m'inspirant de ce que les autres peuvent
+        faire.
       </p>
     </motion.div>
   );

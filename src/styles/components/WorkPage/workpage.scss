@@ -1,0 +1,40 @@
+.workpage {
+  // background: linear-gradient(#dc8282 10%, #d3a764);
+  // background-attachment: fixed;
+  // color: $clr-primary;
+  padding-bottom: 70px !important;
+  margin-top: 100px;
+  h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  a {
+    // color: $clr-primary;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  ul {
+    padding: 0 !important;
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 70%;
+  }
+  .item {
+    &:first-child {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &:nth-child(2) {
+      padding-inline: 10px !important;
+    }
+
+    &:last-child {
+      text-align: end;
+    }
+  }
+}
