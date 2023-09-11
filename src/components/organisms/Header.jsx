@@ -118,7 +118,7 @@ function Header({ toggleAbout, aboutIsActive, workpageIsOn, unsetOnWorkpage }) {
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeIn", duration: 0.15, delay: 1.2 }}
         >
-          <a href="mailto:laurent@icloud.com">.contact</a>
+          <a href="mailto:laurent.chaitas@icloud.com">.contact</a>
         </motion.li>
       </motion.ul>
     </nav>
