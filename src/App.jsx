@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div className="container-fluid px-5">
+    <div className="container-fluid px-sm-5">
       <Router>
         <Header
           toggleAbout={toggleAbout}
